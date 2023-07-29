@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+import { Layout } from 'boemly';
 import './App.css';
-
+import GlobalHeader from './components/GlobalHeader';
+import  GlobalFooter from './components/GlobalFooter';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <GlobalHeader />
+      <GlobalFooter />
+    </Layout>
   );
 }
 
